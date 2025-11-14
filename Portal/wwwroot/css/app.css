@@ -1,0 +1,49 @@
+#app {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+#app>main {
+	flex-grow: 1;
+}
+
+/* Terminal Lines */
+
+.console-line {
+	animation: typing 1s steps(40, end) forwards;
+	clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+
+#console-input {
+	display: flex;
+	align-items: flex-end;
+}
+
+#console-input>span {
+	font-weight: bolder;
+}
+
+#console-input>input {
+	margin-left: 1rem;
+	background: none;
+	border: none;
+	padding: 0;
+	flex-grow: 1;
+	color: #5A5;
+}
+
+#app main input:focus {
+	outline: none;
+}
+
+#terminal-input>span {
+	font-weight: bold;
+}
+
+@keyframes typing {
+	to {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+}

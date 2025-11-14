@@ -5,11 +5,38 @@
 	<meta charset='utf-8'>
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 	<title>Anyone Live</title>
+	<base href="/" />
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/theme.css" />
+	<link rel="stylesheet" href="css/app.css" />
 </head>
 
 <body>
-	<p>Hello World!</p>
+	<div id="app">
+		<header>
+			<p>Anyone Live! The Open World Experiment</p>
+		</header>
+
+		<hr />
+
+		<main>
+			<p class="console-line">Main</p>
+
+			<p id="console-input">
+				<span>> </span>
+				<input type="text" autofocus autocomplete="off" />
+			</p>
+		</main>
+
+		<hr />
+
+		<footer>
+			<p>Github :
+				<a href="https://github.com/alexandrepigeot/AnyoneLive">alexandrepigeot/AnyoneLive</a>
+			</p>
+		</footer>
+	</div>
 </body>
 
 </html>
