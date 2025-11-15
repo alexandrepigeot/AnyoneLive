@@ -21,12 +21,11 @@
 		<hr />
 
 		<main>
-			<p class="console-line">Main</p>
-
-			<p id="console-input">
+			<div id="terminal-lines"></div>
+			<div id="terminal-input">
 				<span>> </span>
-				<input type="text" autofocus autocomplete="off" />
-			</p>
+				<input id="input-text" type="text" autofocus autocomplete="off" />
+			</div>
 		</main>
 
 		<hr />
@@ -38,5 +37,8 @@
 		</footer>
 	</div>
 </body>
+
+<script src="js/signalr.js"></script>
+<script src="js/terminal.js"></script>
 
 </html>

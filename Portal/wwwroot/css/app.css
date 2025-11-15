@@ -9,23 +9,23 @@
 	flex-grow: 1;
 }
 
-/* Terminal Lines */
+/* Terminal */
 
-.console-line {
+#terminal-lines>p {
 	animation: typing 1s steps(40, end) forwards;
 	clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
 }
 
-#console-input {
+#terminal-input {
 	display: flex;
 	align-items: flex-end;
 }
 
-#console-input>span {
+#terminal-input>span {
 	font-weight: bolder;
 }
 
-#console-input>input {
+#terminal-input>input {
 	margin-left: 1rem;
 	background: none;
 	border: none;
@@ -34,7 +34,7 @@
 	color: #5A5;
 }
 
-#app main input:focus {
+#terminal-input>input:focus {
 	outline: none;
 }
 
